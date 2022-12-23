@@ -1,6 +1,7 @@
 # Hotelinventory
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.  
+It's purpose was to practice Angular during the [Angular for Beginners Course [Full Front End Tutorial with TypeScript]](https://www.youtube.com/watch?v=3qBXWUpoPHo) from FreeCodeCamp. You can find notes related to this topic on [my blog](https://pawelel.netlify.app/) under coding - Angular and TypeScript.
 
 ## Development server
 
