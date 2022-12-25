@@ -68,5 +68,19 @@ export class RoomsComponent implements OnInit {
   selectRoom(room: IRoom) {
     this.selectedRoom = room;
   }
-  
+  addRoom() {
+    const newRoom: IRoom = { 
+    id : this.roomList.length + 1,
+    status : 'Available',
+    checkInDate : new Date(),
+    checkOutDate : new Date(),
+    anemities : ['TV', 'AC', 'Wifi'],
+    image : 'https://i.picsum.photos/id/369/200/300.jpg?hmac=ZM5SPtUsEjxc4HjsZXj3DAHeKWSaZV6r8sJMGiLYIJ8',
+    description : 'A room without doors',
+    number : 300 + this.roomList.length,
+    type : 'Deluxe',
+    price : 100+this.roomList.length,
+    };
+    this.roomList.push(newRoom);
+  }
 }
