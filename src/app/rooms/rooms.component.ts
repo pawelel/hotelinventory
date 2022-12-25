@@ -77,7 +77,7 @@ export class RoomsComponent implements OnInit {
     anemities : ['TV', 'AC', 'Wifi'],
     image : 'https://i.picsum.photos/id/369/200/300.jpg?hmac=ZM5SPtUsEjxc4HjsZXj3DAHeKWSaZV6r8sJMGiLYIJ8',
     description : 'A room without doors',
-    number : 100 + this.roomList.length,
+    number : 100 + this.roomList.length+1,
     type : 'Deluxe',
     price : 100+this.roomList.length,
     };
