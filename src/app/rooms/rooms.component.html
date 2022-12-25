@@ -1,16 +1,17 @@
 <h1>Welcome to {{ hotelName }}</h1>
 
 <button (click)="addRoom()">Add Room</button>
+
+<div *ngIf="selectedRoom">
+  <div>{{selectedRoom | json}}</div>
+</div>
+<!-- <div>{{roomSummary|json}}</div> -->
+<div *ngIf="roomSummary.availableRooms > 0">
+
+  <hotelinv-rooms-list [rooms]="roomList" (roomSelected)="selectRoom($event)"></hotelinv-rooms-list>
+</div>
+<button (click)="toggle()">Toggle Rooms</button>
 <div [hidden]="hideRooms">
   <div [innerText]="'Number of rooms: '+ roomSummary.totalRooms"></div>
   {{roomSummary.availableRooms == 0 ? 'No rooms available' : 'Available rooms: '+roomSummary.availableRooms}}
 </div>
-<div *ngIf="selectedRoom">
-<div>{{selectedRoom | json}}</div>
-</div>
-<!-- <div>{{roomSummary|json}}</div> -->
-<div *ngIf="roomSummary.availableRooms > 0">
-  
-<hotelinv-rooms-list [rooms]="roomList" (roomSelected)="selectRoom($event)"></hotelinv-rooms-list>
-</div>
-<button (click)="toggle()">Toggle Rooms</button>
