@@ -4,6 +4,7 @@
   <div [innerText]="'Number of rooms: '+ roomSummary.totalRooms"></div>
   {{roomSummary.availableRooms == 0 ? 'No rooms available' : 'Available rooms: '+roomSummary.availableRooms}}
 </div>
+
 <!-- <div>{{roomSummary|json}}</div> -->
 <div *ngIf="roomSummary.availableRooms > 0">
   
