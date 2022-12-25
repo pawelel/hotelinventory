@@ -66,6 +66,6 @@ export class RoomsComponent implements OnInit {
     this.hideRooms = !this.hideRooms;
   }
   selectRoom(room: IRoom) {
-    console.log(room);
+    this.selectedRoom = room;
   }
 }
