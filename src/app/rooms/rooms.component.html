@@ -1,5 +1,5 @@
 <h1>Welcome to {{ hotelName }}</h1>
-<button (click)="toggle()">Toggle Rooms</button>
+
 <button (click)="addRoom()">Add Room</button>
 <div [hidden]="hideRooms">
   <div [innerText]="'Number of rooms: '+ roomSummary.totalRooms"></div>
@@ -13,3 +13,4 @@
   
 <hotelinv-rooms-list [rooms]="roomList" (roomSelected)="selectRoom($event)"></hotelinv-rooms-list>
 </div>
+<button (click)="toggle()">Toggle Rooms</button>
