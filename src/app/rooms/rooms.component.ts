@@ -15,7 +15,7 @@ export class RoomsComponent implements OnInit {
     availableRooms: 1,
     bookedRooms: 1,
   };
-  selectedRoom: IRoom | undefined;
+  selectedRoom: IRoom | undefined; // it is possible to use ! instead of | undefined
   roomList: IRoom[] = [];
   constructor() {}
 
