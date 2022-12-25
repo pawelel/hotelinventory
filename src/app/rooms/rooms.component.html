@@ -5,7 +5,7 @@
   {{roomSummary.availableRooms == 0 ? 'No rooms available' : 'Available rooms: '+roomSummary.availableRooms}}
 </div>
 <div *ngIf="selectedRoom">
-<div>{{selectedRoom.number}}</div>
+<div>{{selectedRoom | json}}</div>
 </div>
 <!-- <div>{{roomSummary|json}}</div> -->
 <div *ngIf="roomSummary.availableRooms > 0">
