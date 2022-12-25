@@ -1,8 +1,7 @@
 <h1>Welcome to {{ hotelName }}</h1>
 <button (click)="toggle()">Toggle Rooms</button>
 <div [hidden]="hideRooms">
-  Number of rooms:
-  <div [innerText]="roomSummary.totalRooms"></div>
+  <div [innerText]="'Number of rooms: '+ roomSummary.totalRooms"></div>
   {{roomSummary.availableRooms == 0 ? 'No rooms available' : 'Available rooms: '+roomSummary.availableRooms}}
 </div>
 <!-- <div>{{roomSummary|json}}</div> -->
