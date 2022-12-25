@@ -1,6 +1,12 @@
-<h1>Welcome to {{hotelName}} </h1>
+<h1>Welcome to {{ hotelName }}</h1>
 <button (click)="toggle()">Toggle Rooms</button>
 <div [hidden]="hideRooms">
-    Number of rooms:
-    <div [innerText]="numberOfRooms"></div>
+  Number of rooms:
+  <div [innerText]="roomSummary.totalRooms"></div>
+  {{roomSummary.availableRooms == 0 ? 'No rooms available' : 'Available rooms: '+roomSummary.availableRooms}}
+</div>
+<!-- <div>{{roomSummary|json}}</div> -->
+<div *ngIf="roomSummary.availableRooms > 0">
+  
+<hotelinv-rooms-list [rooms]="roomList" (roomSelected)="selectRoom($event)"></hotelinv-rooms-list>
 </div>
