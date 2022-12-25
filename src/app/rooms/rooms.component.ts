@@ -75,9 +75,9 @@ export class RoomsComponent implements OnInit {
     checkInDate : new Date(),
     checkOutDate : new Date(),
     anemities : ['TV', 'AC', 'Wifi'],
-    image : 'https://i.picsum.photos/id/607/200/300.jpg?hmac:ZEvzqI',
+    image : 'https://i.picsum.photos/id/607/200/300.jpg',
     description : 'A room without doors',
-    number : 100 + this.roomList.length,
+    number : 300 + this.roomList.length,
     type : 'Deluxe',
     price : 100+this.roomList.length,
     };
