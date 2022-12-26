@@ -8,7 +8,7 @@ import { IRoom } from './rooms';
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss'],
 })
-export class RoomsComponent implements OnInit {
+export class RoomsComponent implements OnInit, AfterViewInit {
   hotelName = 'The Grand Hotel';
   title = 'Rooms';
   @ViewChild(HeaderComponent) headerComponent: HeaderComponent | undefined;
