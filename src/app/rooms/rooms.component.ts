@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { IRoomSummary } from './rooms';
 import { IRoom } from './rooms';
@@ -64,6 +64,9 @@ export class RoomsComponent implements OnInit {
         anemities: ['TV', 'AC'],
       },
     ];
+  }
+  ngAfterViewInit() {
+    console.log(this.headerComponent);
   }
   toggle() {
     this.hideRooms = !this.hideRooms;
