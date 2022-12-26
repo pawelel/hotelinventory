@@ -10,7 +10,7 @@ import { IRoom } from './rooms';
 })
 export class RoomsComponent implements OnInit, AfterViewInit {
   hotelName = 'The Grand Hotel';
-  title = 'Rooms';
+  
   @ViewChild(HeaderComponent) headerComponent: HeaderComponent | undefined;
   hideRooms = false;
   roomSummary: IRoomSummary = {
