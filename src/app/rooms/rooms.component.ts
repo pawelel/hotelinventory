@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 import { IRoomSummary } from './rooms';
 import { IRoom } from './rooms';
 
@@ -9,6 +10,8 @@ import { IRoom } from './rooms';
 })
 export class RoomsComponent implements OnInit {
   hotelName = 'The Grand Hotel';
+  title = 'Rooms';
+  @ViewChild(HeaderComponent) headerComponent: HeaderComponent | undefined;
   hideRooms = false;
   roomSummary: IRoomSummary = {
     totalRooms: 3,
