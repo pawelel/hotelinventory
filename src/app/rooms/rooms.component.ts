@@ -87,7 +87,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
     type : 'Deluxe',
     price : 100+this.roomList.length,
     };
-    this.roomList.push(newRoom);
+    // this.roomList.push(newRoom);
     this.roomList = [...this.roomList, newRoom];
   }
 }
