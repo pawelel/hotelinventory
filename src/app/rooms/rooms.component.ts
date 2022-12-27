@@ -11,7 +11,7 @@ import { IRoom } from './rooms';
 export class RoomsComponent implements OnInit, AfterViewInit {
   hotelName = 'The Grand Hotel';
   
-  @ViewChild(HeaderComponent, {static: true} ) headerComponent: HeaderComponent | undefined; 
+  @ViewChild(HeaderComponent, {static: true} ) headerComponent: HeaderComponent | undefined; // static: true is used to avoid error in ngAfterViewInit
   hideRooms = false;
   roomSummary: IRoomSummary = {
     totalRooms: 3,
