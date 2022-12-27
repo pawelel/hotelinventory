@@ -26,7 +26,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
   constructor(private roomsService: RoomsService) {}
 
   ngOnInit(): void {
-  
+  this.roomList = this.roomsService.getRooms();
   }
   ngAfterViewInit() {
     console.log(this.headerComponent);
