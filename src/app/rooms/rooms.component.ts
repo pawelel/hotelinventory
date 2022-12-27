@@ -4,6 +4,7 @@ import { IRoomSummary } from './rooms';
 import { IRoom } from './rooms';
 import { RoomsService } from './services/rooms.service';
 
+
 @Component({
   selector: 'hotelinv-rooms',
   templateUrl: './rooms.component.html',
@@ -19,10 +20,10 @@ export class RoomsComponent implements OnInit, AfterViewInit {
     availableRooms: 1,
     bookedRooms: 1,
   };
-  roomService = new RoomsService();
+  // roomService = new RoomsService();
   selectedRoom: IRoom | undefined; // it is possible to use ! instead of | undefined
   roomList: IRoom[] = [];
-  constructor() {}
+  constructor(private roomsService: RoomsService) {}
 
   ngOnInit(): void {
   
