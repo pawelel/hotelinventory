@@ -11,7 +11,7 @@ import { IRoom } from './rooms';
 export class RoomsComponent implements OnInit, AfterViewInit {
   hotelName = 'The Grand Hotel';
   
-  @ViewChild(HeaderComponent) headerComponent: HeaderComponent | undefined;
+  @ViewChild(HeaderComponent, {static: true} ) headerComponent: HeaderComponent | undefined; 
   hideRooms = false;
   roomSummary: IRoomSummary = {
     totalRooms: 3,
