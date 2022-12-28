@@ -9,7 +9,6 @@ import { RoomsService } from './services/rooms.service';
   selector: 'hotelinv-rooms',
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss'],
-  providers: [RoomsService]
 })
 export class RoomsComponent implements OnInit, AfterViewInit {
   hotelName = 'The Grand Hotel';
